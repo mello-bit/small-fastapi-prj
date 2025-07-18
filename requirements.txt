@@ -1,0 +1,7 @@
+fastapi[all]
+python-decouple
+datetime
+psycopg[binary]
+sqlalchemy
+pydantic 
+sqlmodel
