@@ -10,6 +10,12 @@ class Task(SQLModel, table=True):
     completed: bool = Field(default=False, nullable=False)
 
 
+class UpdateTask(SQLModel):
+    name: str = Field(default="", nullable=False)
+    description: str = Field(default="", max_length=200)
+    completed: bool = Field(default=False, nullable=False)
+
+
 class TasksList(SQLModel):
     tasks: List[Task]
     count: int
